@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Submenu</title>
+
+    <!--font awesome(for icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo-btn">
+          <a href="#" class="logo"> <i class="fab fa-slack"></i> Tivotal </a>
+
+          <div class="toggle-btn">
+            <i class="fas fa-bars menu-btn"></i>
+            <i class="fas fa-times close-btn"></i>
+          </div>
+        </div>
+
+        <div class="menu">
+          <ul class="menu-list">
+            <li><a href="#" class="menu-link">Home</a></li>
+
+            <li class="dropdown">
+              <div class="menu-link">
+                Services <i class="fas fa-caret-down icon"></i>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-link"> Marketing </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> UI Design </a>
+                </li>
+
+                <li class="dropdown-submenu">
+                  <div class="dropdown-link">
+                    Tutorial
+                    <i class="fas fa-plus dropdown-icon"></i>
+                  </div>
+
+                  <ul class="submenu-links">
+                    <li>
+                      <a href="#" class="dropdown-sublink"> HTML </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown-sublink"> CSS </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown-sublink"> JavaScript </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="menu-link">Blog</a></li>
+
+            <li class="dropdown">
+              <div class="menu-link">
+                Company <i class="fas fa-caret-down icon"></i>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-link"> About </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> Contact </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-link"> Careers </a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#" class="menu-link">Reviews</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>
